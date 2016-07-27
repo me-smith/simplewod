@@ -138,6 +138,42 @@ body {
   margin-bottom: -50px;
 }
 
+/*
+ * Scale down image to 500x500 and crop left side of img
+ */
+
+.mock-img-crop-left {
+  width:500px;
+  height:500px;
+}
+
+/*
+ * Scale down image to 500x500 and crop right side of img
+ */
+.mock-img-crop-right {
+  width:500px;
+  height:500px;
+}
+
+/*
+ * Add row padding
+ */
+.extra-padding {
+  padding-bottom: 50px;
+}
+
+/*
+ * Vertically align column
+ */
+.col-lg-4, .col-lg-8 {
+    float:none;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:-4px;
+}
+
+
+
 .project-icon {
   width:100px;
   height:100px;
@@ -159,6 +195,8 @@ body {
 }
 
 
+
+
 /*
  * Affix and center
  */
@@ -166,11 +204,11 @@ body {
 @media (min-width: 768px) {
   /* Pull out the header and footer */
   .masthead {
-    position: fixed;
+    position: static;
     top: 0;
   }
   .mastfoot {
-    position: fixed;
+    position: static;
     bottom: 0;
   }
   /* Start the vertical centering */
@@ -183,6 +221,7 @@ body {
   .cover-container {
     width: 100%; /* Must be percentage or pixels for horizontal alignment */
   }
+
 }
 
 @media (min-width: 992px) {
@@ -191,4 +230,17 @@ body {
   .cover-container {
     width: 700px;
   }
+
+  .mock-img-crop-left {
+    margin-bottom: -50px;
+    margin-left: -200px;
+    margin-right: -50px;
+  }
+
+  .mock-img-crop-right {
+    margin-bottom: -50px;
+    margin-left: -50px;
+    margin-right: -200px;
+  }
+
 }
